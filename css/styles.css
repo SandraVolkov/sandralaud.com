@@ -11010,26 +11010,3 @@ header.masthead h1, header.masthead .h1 {
   border-color: #f300a1 !important;  /* Optional: change border color */
 }
 
-/* Initial header style - Desktop */
-header {
-  transition: all 0.3s ease; /* Smooth transition */
-  padding: 20px 0; /* Default padding (desktop) */
-}
-
-/* Smaller header for mobile when scrolling */
-header.smaller {
-  padding: 10px 0; /* Reduced padding (mobile) */
-  font-size: 14px;  /* Adjust font size for a smaller look */
-}
-
-/* Mobile-specific styles (media query) */
-@media (max-width: 768px) {
-  header {
-    padding: 20px 0;  /* Larger padding for mobile initially */
-  }
-
-  /* Smaller header class when scrolling */
-  header.smaller {
-    padding: 10px 0; /* Adjust padding when scrolling */
-  }
-}
