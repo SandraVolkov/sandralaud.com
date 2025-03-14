@@ -57,3 +57,20 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Detect scroll and add class for mobile devices
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const mobileBreakpoint = 768; // Set breakpoint for mobile (max-width: 768px)
+
+    if (window.innerWidth <= mobileBreakpoint) {
+        if (window.scrollY > 50) { // Add class if scrolled more than 50px
+            header.classList.add('smaller');
+        } else {
+            header.classList.remove('smaller');
+        }
+    } else {
+        // Ensure the header doesn't shrink on desktop
+        header.classList.remove('smaller');
+    }
+});
