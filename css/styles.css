@@ -11013,21 +11013,17 @@ header.masthead h1, header.masthead .h1 {
 .emoji {
   font-size: 60px;
 }
-
-/* Hero Section */
-#hero {
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), 
-              url("../assets/img/sandra-cover.png");
-  background-size: cover; /* Ensures the image covers the entire section */
-  background-position: center; /* Keeps the image centered */
-  background-repeat: no-repeat; /* Prevents repeating the background */
-  height: 100vh; /* Full height of the viewport */
-  width: 100%; /* Full width of the container */
-}
-
-/* For smaller screens (mobile), adjust the height of the background */
-@media (max-width: 767px) {
-  #hero {
-      height: 50vh; /* Makes the hero section take up 50% of the viewport height on mobile */
+@media (max-width: 768px) {
+  #mainNav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  #mainNav .navbar-brand {
+    font-size: 1.25rem;
+  }
+  
+  #mainNav .navbar-brand img {
+    height: 2rem;  /* Adjust this value based on your logo */
   }
 }
