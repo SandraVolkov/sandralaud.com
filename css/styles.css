@@ -11013,6 +11013,7 @@ header.masthead h1, header.masthead .h1 {
 .emoji {
   font-size: 60px;
 }
+
 @media (max-width: 768px) {
   #mainNav {
     padding-top: 0.5rem;
@@ -11020,10 +11021,11 @@ header.masthead h1, header.masthead .h1 {
   }
   
   #mainNav .navbar-brand {
-    font-size: 1.25rem;
+    padding: 0;  /* Remove padding around the brand/logo */
+    margin: -0.5rem 0;  /* Negative margin to allow logo to be bigger without affecting navbar height */
   }
   
   #mainNav .navbar-brand img {
-    height: 2rem;  /* Adjust this value based on your logo */
+    height: 70px;  /* Make logo bigger */
   }
 }
