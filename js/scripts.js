@@ -20,7 +20,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -51,10 +50,12 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
+    // Activate SimpleLightbox plugin for portfolio items and collab video
     new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
+        elements: '#portfolio a.portfolio-box, .video-container a.portfolio-box',
+        videoRegex: /\.(mp4)$/i,
+        videoPosterPath: false,
+        videoAutoplay: true
     });
 
 });
-
