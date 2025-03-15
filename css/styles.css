@@ -11052,3 +11052,7 @@ header.masthead {
       padding-top: 25vh;  /* Push content down to center of screen */
   }
 }
+
+.portfolio-box .portfolio-box-caption {
+  background: rgba(243, 0, 161, 0.5) !important;  /* #f300a1 with 50% opacity */
+}
